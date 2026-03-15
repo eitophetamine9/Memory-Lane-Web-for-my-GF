@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍯</text></svg>">
+    <title>Surprise (not) 💛</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Kalam font supports both 400 and 700 (Bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="locked">
+
+    <div id="bg-gradient"></div>
+    <div id="heart-bg"></div>
+
+    <div id="password-gate">
+        <div class="glass-card" id="gate-card">
+            <div class="bubu-dudu-container">
+                <img src="assets/images/bubududu1.gif" alt="Bubu Dudu" class="gate-gif">
+            </div>
+            <h2>Are you my honeybunch?</h2>
+            <p class="gate-instruction">Prove it! (MMDDYYYY)</p>
+            <div class="input-wrapper">
+                <input type="password" id="password-input" maxlength="8" placeholder="PIN" autocomplete="off">
+            </div>
+            <button id="unlock-btn">Unlock</button>
+            <p id="error-msg">That's not the day I became yours, my honeybunchh! 💛</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        
+        <div class="music-container">
+            <button id="music-toggle">🎵</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+        
+        <audio id="bg-music" loop><source src="assets/audio/your-song.mp3" type="audio/mpeg"></audio>
+
+        <header>
+            <h1>Memory Lane</h1>
+            <p>Every moment with you is golden.</p>
+        </header>
+
+        <section class="timeline">
+            <div class="event left">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">🍯</div>
+                        <div class="flip-card-back content">
+                            <span class="date">July 16, 2025</span>
+                            <h3>First Meeting</h3>
+                            <img src="assets/images/meeting.png" alt="First Meeting" class="img-placeholder">
+                            <p>The day my world changed forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">🍯</div>
+                        <div class="flip-card-back content">
+                            <span class="date">September 7, 2025</span>
+                            <h3>First Date</h3>
+                            <img src="assets/images/first-date.jpeg" alt="First Date" class="img-placeholder">
+                            <p>Your hands cold and soft to hold.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event left">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">🍯</div>
+                        <div class="flip-card-back content">
+                            <span class="date">December 18, 2025</span>
+                            <h3>Second Date</h3>
+                            <img src="assets/images/second-date.jpeg" alt="Second Date" class="img-placeholder">
+                            <p>Confirming that the first time wasn't just a dream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="flip-card highlight-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">🍯</div>
+                        <div class="flip-card-back content highlight">
+                            <span class="date">February 14, 2026</span>
+                            <h3>The Big Yes</h3>
+                            <img src="assets/images/yes-day.jpeg" alt="Yes Day" class="img-placeholder">
+                            <p>The happiest day of my life. 💛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2 class="section-title">Even More of Us 💛</h2>
+            <div class="gallery-grid">
+                <div class="polaroid"><img src="assets/images/gallery1.jpg"></div>
+                <div class="polaroid"><img src="assets/images/gallery2.jpeg"></div>
+                <div class="polaroid"><img src="assets/images/gallery3.jpg"></div>
+                <div class="polaroid"><img src="assets/images/gallery4.jpeg"></div>
+                <div class="polaroid"><img src="assets/images/gallery5.jpeg"></div>
+                <div class="polaroid"><img src="assets/images/gallery6.jpeg"></div>
+            </div>
+        </section>
+
+        <section class="poem-section">
+            <h2 class="section-title">A Piece of My Heart</h2>
+            <div class="poem-reveal-card" id="poem-trigger">
+                <div class="poem-inner">
+                    <div class="poem-front">💛🍯💛</div>
+                    <div class="poem-back">
+                        <div id="typewriter-poem" class="typewriter-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="envelope-section">
+            <div class="envelope-wrapper" id="envelope">
+                <div class="envelope-back"></div>
+                <div class="letter" id="letter">
+                    <div class="letter-text">
+                        <p>My Dearest Honeybunchh,</p>
+                        <p>
+                            Words can never express how grateful I am to have you in my life. My life has never been better. You stayed with me through highs and lows, and for that, I am forever in debt to your kindness. You showed me that love can be both calm and exciting.
+                            <br><br>
+                            Just know that I will always be here for you, my dearest honeybunch. I will always be your number one supporter, your best friend, your boyfriend, and eventually your husband. 
+                            <br><br>
+                            You touched not just my heart, but also my soul. I love you now until death do us part. I’m here to share my world with yours, and yours to mine. 
+                        </p>
+                        <p>Sincerely from your OA boyfriend,<br>Erick 💛</p>
+                    </div>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-top"></div>
+                <div class="heart-seal">💛</div>
+            </div>
+            <p class="envelope-hint">One last thing... click the envelope</p>
+        </section>
+
+        <footer>
+            <img src="assets/images/bubududu2.gif" width="240" alt="Bubu Dudu">
+            <p>Forever & Always 💛</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
